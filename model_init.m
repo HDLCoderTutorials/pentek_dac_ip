@@ -1,20 +1,20 @@
 %% RFSoC Parameters
 % RF ADC/DAC Sample rate
-RFConverterSampleRate = 4e9;
+ConverterSamplingRate = 4e9;
 
 % Digital Up/Down Conversion factor
-DDC_DUC_Factor = 8;
+DDC_DUC_factor = 2;
 
 % Effective sampling rate after decimation
-fs = RFConverterSampleRate/DDC_DUC_Factor;
-Ts = 1/fs;
+Fs = ConverterSamplingRate/DDC_DUC_factor;
+Ts = 1/Fs;
 
 % Samples per clock cycle
-SamplesPerClockCycle = 4;
+VectorSamplingFactor = 4;
 
 % FPGA clock rate / sample time
-FPGAClkRate = fs/SamplesPerClockCycle;
-FPGATs = 1/FPGAClkRate;
+fpga_clk_rate = Fs/VectorSamplingFactor;
+fpga_Ts = 1/fpga_clk_rate;
 
 %% Application parameters
 
@@ -23,5 +23,5 @@ fc = 1.25e9;
 
 % NCO
 NCO_WL = 16;
-NCO_f0 = 2e6;
-NCO_phase_inc = round(NCO_f0 * 2^NCO_WL / fs);
+NCO_f0 = 250e6;
+NCO_phase_inc = round (((NCO_f0*2^NCO_WL)/fpga_clk_rate)/VectorSamplingFactor);
