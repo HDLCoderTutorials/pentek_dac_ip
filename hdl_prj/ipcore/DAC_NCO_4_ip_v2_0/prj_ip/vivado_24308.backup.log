@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Sep 15 17:49:50 2020
+# Process ID: 24308
+# Current directory: C:/Projects/Pentek/pentek_dac_ip/hdl_prj/ipcore/DAC_NCO_4_ip_v2_0/prj_ip
+# Command line: vivado.exe -mode batch -notrace -source vivado_ip_package.tcl
+# Log file: C:/Projects/Pentek/pentek_dac_ip/hdl_prj/ipcore/DAC_NCO_4_ip_v2_0/prj_ip/vivado.log
+# Journal file: C:/Projects/Pentek/pentek_dac_ip/hdl_prj/ipcore/DAC_NCO_4_ip_v2_0/prj_ip\vivado.jou
+#-----------------------------------------------------------
+source vivado_ip_package.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/Pentek/pentek_dac_ip/hdl_prj/ipcore'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Projects/Pentek/pentek_dac_ip/hdl_prj/ipcore' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Projects/Pentek/pentek_dac_ip/hdl_prj/ipcore/DAC_NCO_4_ip_v2_0/prj_ip'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Stream_Master' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Stream_Slave' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Lite' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Lite_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IPCORE_RESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Lite_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IPCORE_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'AXI4_Lite_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IPCORE_RESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'AXI4_Lite_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'AXI4_Lite'.
+INFO: [IP_Flow 19-4728] Bus Interface 'AXI4_Lite_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'AXI4_Lite_ARESETN'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IPCORE_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'IPCORE_RESETN'.
+WARNING: [IP_Flow 19-3158] Bus Interface 'AXI4_Stream_Master': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'AXI4_Stream_Slave': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3153] Bus Interface 'IPCORE_CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_pack_vector_complex.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_pack_vector_complex.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_Pack_Complex_Vector.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_Pack_Complex_Vector.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_To_Data_Bus.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_To_Data_Bus.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_To_Data_Bus1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_To_Data_Bus1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_LookUpTableGen.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_LookUpTableGen.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_WaveformGen.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_WaveformGen.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_NCO_HDL_Optimized4.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_NCO_HDL_Optimized4.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_For_Each_Subsystem.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_For_Each_Subsystem.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_Vector_NCO.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_Vector_NCO.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_DAC_NCO_4xSampling_IQ.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_src_DAC_NCO_4xSampling_IQ.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_reset_sync.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_reset_sync.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_dut.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_dut.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_SimpleDualPortRAM_generic.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_SimpleDualPortRAM_generic.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_fifo_data_OUT.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_fifo_data_OUT.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_SimpleDualPortRAM_singlebit.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_SimpleDualPortRAM_singlebit.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_fifo_TLAST_OUT.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_fifo_TLAST_OUT.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_axi4_stream_master.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_axi4_stream_master.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_fifo_data.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_fifo_data.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_axi4_stream_slave.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_axi4_stream_slave.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_addr_decoder.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_addr_decoder.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_axi_lite_module.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_axi_lite_module.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_axi_lite.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip_axi_lite.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/DAC_NCO_4_ip.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 15 17:50:05 2020...
