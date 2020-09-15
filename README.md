@@ -8,6 +8,12 @@ the Pentek project.
 
 <hr>
 
+##### Linux memory modification
+Memory can be modified using the ```devmem``` utility.  
+For example, the DDR4 project Mux switch was modified through linux bash using:  
+```devmem 0xA000011c 32 0```
+
+
 ##### Markdown
 * [Markdown Syntax Guide](https://guides.github.com/features/mastering-markdown/)
 * [Markdown offline viewer Chrome Extension](https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl)  

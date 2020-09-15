@@ -23,5 +23,5 @@ fc = 1.25e9;
 
 % NCO
 NCO_WL = 16;
-NCO_f0 = 250e6;
+NCO_f0 = 251e6;
 NCO_phase_inc = round (((NCO_f0*2^NCO_WL)/fpga_clk_rate)/VectorSamplingFactor);
